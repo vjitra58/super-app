@@ -1,0 +1,22 @@
+.container{
+    width: 125px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-radius: 20px;
+    background-color: #148A08;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.container > i{
+    color: #085C00;
+    font-size: 1.2rem;
+}

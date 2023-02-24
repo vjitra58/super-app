@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './App.css';
-import Registration from './components/registration/Registration.js';
-
+import Registration from './pages/registration/Registration.js';
+import Category from "./pages/category/Category.js";
 
 function App() {
 
@@ -11,7 +11,8 @@ function App() {
 
   return (
     <div className="app">
-      <Registration />
+      {/* <Registration /> */}
+      <Category />
     </div>
   );
 }
