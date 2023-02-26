@@ -1,11 +1,24 @@
 import React from 'react'
 import styles from "./Pill.module.css";
 
-const Pill = ({name}) => {
+const Pill = ({name, color, dispatch}) => {
+
+  const generes = JSON.parse(localStorage.getItem("selectedGenres")) || [];
+
+  const handleClick = (e) => {
+    console.log("removed", name);
+    generes.find((item, index) => {
+      if(item.name === name){
+        generes.splice(index, 1);
+        dispatch({type:"REMOVE", name:name})
+      }
+    })
+  }
+
   return (
-    <div className={styles.container}>
+    <div style={{backgroundColor:color}} className={styles.container}>
       <p>{name}</p>
-      <i class="fa-solid fa-xmark"></i>
+      <i onClick={handleClick} class="fa-solid fa-xmark"></i>
     </div>
   );
 }

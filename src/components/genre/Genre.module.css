@@ -39,3 +39,7 @@ img{
     object-fit: contain;
 }
 
+.selected{
+    border: 2px solid #72DB73;
+}
+

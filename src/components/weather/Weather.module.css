@@ -1,0 +1,56 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #101744;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.top{
+    width: 100%;
+    background-color: #e246ea;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.bottom{
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.weatherLine{
+    height: 30%;
+    border: 0.78px solid #FFFFFF;
+}
+
+.weatherBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.weatherBox > div{
+    height: 50%;
+}
+
+.weatherBox > h1, .weatherBox > i{
+    font-size: 2rem;
+    font-weight: 600;
+}
+

@@ -1,5 +1,7 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import "./Registration.css";
+import { useNavigate } from "react-router-dom";
+
 
 const Registration = () => {
 
@@ -8,6 +10,15 @@ const Registration = () => {
     const [email, setEmail] = useState({ val: "", error: "" });
     const [mobile, setMobile] = useState({ val: "", error: "" });
     const [check, setCheck] = useState(false);
+
+    const navigate = useNavigate();
+
+    useEffect(()=>{
+      const user = JSON.parse(localStorage.getItem("user"));
+      if(user){
+        navigate("/category");
+      }
+    }, []);
 
     const RegisterUser = (e) => {
         e.preventDefault();
@@ -100,7 +111,9 @@ const Registration = () => {
             ...prevstate,
             error: "",
         }));
+        localStorage.setItem("user", JSON.stringify({name: name.val, username: username.val, email: email.val, mobile: mobile.val}));
         alert("User registered successfully");
+        navigate("/category");
     }
 
   return (

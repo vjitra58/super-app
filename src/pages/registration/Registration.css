@@ -146,7 +146,7 @@ form span{
     font-weight: 700;
 }
 
-form>button {
+button[type="submit"] {
     width: 100%;
     font-size: 1rem;
     color: white;
@@ -158,14 +158,15 @@ form>button {
     cursor: pointer;
     transition: ease-in-out 0.2s;
     margin-top: 20px;
+    
 }
 
-form>button:hover {
+button[type="submit"]:hover {
     background-color: white;
     color: #72DB73;
 }
 
-form>button:active {
+button[type="submit"]:active {
     background-color: white;
     color: #72DB73;
     transform: scale(0.99);
