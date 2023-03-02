@@ -2,6 +2,7 @@ import React from 'react'
 import styles from "./style.module.css"
 
 
+
 const DisplayWeather = ({name, val, unit, icon}) => {
   return (
     <div className={styles.container}>
