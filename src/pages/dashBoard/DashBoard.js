@@ -4,6 +4,7 @@ import Profile from "../../components/profile/Profile.js";
 import News from "../../components/news/News.js";
 import Weather from "../../components/weather/Weather.js";
 import Notes from "../../components/notes/Notes.js";
+import Timer from "../../components/timer/Timer.js";
 
 const DashBoard = () => {
    
@@ -23,7 +24,9 @@ const DashBoard = () => {
             <Notes />
           </div>
         </div>
-        <div className={styles.bottom}></div>
+        <div className={styles.bottom}>
+            <Timer />
+        </div>
       </div>
       <div className={styles.right}>
         <News/>

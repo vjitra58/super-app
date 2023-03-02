@@ -1,0 +1,45 @@
+.container{
+    width:95%;
+    height:100%;
+    background-color: #000;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.profile > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.navbar > p{
+    color: #72DB73;
+    font-family: 'Single Day', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content{
+    width: 95%;
+    height: 100%;
+    margin: auto;
+}
+
+.content > h2{
+    color : white;
+    font-family: Roboto;
+    margin-top: 10px;
+}
