@@ -6,25 +6,27 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 1rem;
     overflow: hidden;
 }
+
+
 
 .top{
     width: 100%;
     background-color: #e246ea;
-    padding: 10px 30px;
+    padding: 0px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #fff;
 }
 
 .bottom{
     width: 100%;
-    padding: 10px 30px;
+    /* padding: ; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +34,7 @@
 }
 
 .weatherLine{
-    height: 30%;
+    height: 1.5rem;
     border: 0.78px solid #FFFFFF;
 }
 
@@ -50,7 +52,7 @@
 }
 
 .weatherBox > h1, .weatherBox > i{
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: 600;
 }
 

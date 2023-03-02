@@ -26,7 +26,11 @@ const Profile = () => {
         </div>
         <div className={styles.intrest}>
           {selectedGenres.map((genre, index) => {
-            return <Pill key={index} name={genre.name} color="#9F94FF" />;
+            return (
+              <div key={index} className={styles.pills}>
+                <Pill name={genre.name} color="#9F94FF" />
+              </div>
+            );
           })}
         </div>
       </div>
