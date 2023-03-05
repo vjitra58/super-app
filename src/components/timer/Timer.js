@@ -113,11 +113,11 @@ const Timer = () => {
             <p>hours</p>
             <div className={styles.counter}>
               <div onClick={() => changeHours(true)} className={styles.arrow}>
-                <img src="up.svg" />
+                <img src="/up.svg" />
               </div>
               <p>{formatNumber(hours)}</p>
               <div onClick={() => changeHours(false)} className={styles.arrow}>
-                <img src="down.svg" />
+                <img src="/down.svg" />
               </div>
             </div>
           </div>
@@ -127,14 +127,14 @@ const Timer = () => {
             <p>minutes</p>
             <div className={styles.counter}>
               <div onClick={() => changeMinutes(true)} className={styles.arrow}>
-                <img src="up.svg" />
+                <img src="/up.svg" />
               </div>
               <p>{formatNumber(minutes)}</p>
               <div
                 onClick={() => changeMinutes(false)}
                 className={styles.arrow}
               >
-                <img src="down.svg" />
+                <img src="/down.svg" />
               </div>
             </div>
           </div>
@@ -144,14 +144,14 @@ const Timer = () => {
             <p>seconds</p>
             <div className={styles.counter}>
               <div onClick={() => changeSeconds(true)} className={styles.arrow}>
-                <img src="up.svg" />
+                <img src="/up.svg" />
               </div>
               <p>{formatNumber(seconds)}</p>
               <div
                 onClick={() => changeSeconds(false)}
                 className={styles.arrow}
               >
-                <img src="down.svg" />
+                <img src="/down.svg" />
               </div>
             </div>
           </div>

@@ -3,6 +3,7 @@
     height: 100%;
     position: relative;
     padding: 1.5rem;
+    border-radius: 1rem;
     background-color: #F1C75B;
     font-family: Roboto;    
 }

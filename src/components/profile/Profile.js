@@ -14,7 +14,7 @@ const Profile = () => {
       <div className={styles.profileImage}>
         <img
           className={styles.imgClass}
-          src="profile.png"
+          src="/profile.png"
           alt="profile image"
         />
       </div>

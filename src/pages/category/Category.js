@@ -35,6 +35,7 @@ const Category = () => {
         navigate("/dashboard");
     }
 
+
   return (
     <div className={styles.category}>
       <div className={styles.category_left}>
@@ -42,7 +43,16 @@ const Category = () => {
         <p>Choose your entertainment category</p>
         <div className={styles.selected_category}>
           {selectedGenres.map((genra, i) => {
-            return <Pill dispatch={dispatch} color="#148A08" key={i} name={genra.name} />;
+            return (
+              <div>
+                <Pill
+                  dispatch={dispatch}
+                  color="#148A08"
+                  key={i}
+                  name={genra.name}
+                />
+              </div>
+            );
           })}
         </div>
       </div>
